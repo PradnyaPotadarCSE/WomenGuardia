@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women Safety App - Login</title>
+    <link rel="stylesheet" href="css/loginStyles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container"></div>
+      <div class="login-container">
+        <div class="login-header">
+          <h1>WELCOME</h1>
+          <p>Log in to your Women Safety account</p>
+        </div>
+
+        <form class="login-form" action="/login" method="POST">
+          <label for="mobile_number">Mobile number</label>
+          <input
+            type="tel"
+            id="mobile_number"
+            name="mobile_number"
+            placeholder="Enter your number"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit">Login</button>
+        </form>
+
+        <div class="signup-link">
+          <p>Don't have an account? <a href="/register">Sign up here</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="js/loginScript.js"></script>
+  </body>
+</html>

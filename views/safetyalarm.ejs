@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Alarm - Guardia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/safetyStyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <img src="images/protection.png" alt="Guardia Logo" class="header-logo">
+                <div class="header-text">
+                    <h1>Guardia</h1>
+                    <h2>Ensuring Your Safety, Anytime, Anywhere</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/navigation">Navigation</a>
+        <a href="/guardian">Guardians</a>
+        <a href="/safetyalarm">Safety Alarm</a>
+    </nav>
+    <section class="helpline-ticker">
+        <marquee behavior="scroll" direction="left">
+            <strong>Women's Helpline: 1091</strong> – Available 24/7 for your safety and support.
+        </marquee>
+    </section>
+
+    <main>
+        <div class="alarm-container">
+            <div class="alarm-card">
+                <h2>SOS Alarm</h2>
+                <img src="images/sos.png" alt="SOS Alarm" class="alarm-image">
+                <button id="sosButton" class="alarm-button">SOS</button>
+                <p class="alarm-info">In case of emergency, press the SOS button. Your location and distress signal will
+                    be sent to your guardians and nearby authorities.</p>
+            </div>
+            <div class="alarm-card">
+                <h2>Call Police</h2>
+                <img src="images/policeman.png" alt="Police" class="alarm-image">
+                <button id="policeButton" class="alarm-button">Call Police</button>
+                <p class="alarm-info">Immediately connect with local law enforcement. Use this in situations requiring
+                    police intervention.</p>
+            </div>
+            <div class="alarm-card">
+                <h2>Call Ambulance</h2>
+                <img src="images/ambulance.png" alt="Ambulance" class="alarm-image">
+                <button id="ambulanceButton" class="alarm-button">Call Ambulance</button>
+                <p class="alarm-info">Request immediate medical assistance. Use this for health emergencies requiring an
+                    ambulance.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guardia - All Rights Reserved</p>
+    </footer>
+
+    <audio id="sirenAudio" loop>
+        <source src="images/siren.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <script src="js/safetyScript.js"></script>
+</body>
+
+</html>

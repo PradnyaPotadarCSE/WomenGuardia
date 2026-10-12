@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation - Guardia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navigationStyles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <img src="images/protection.png" alt="Guardia Logo" class="header-logo">
+                <div class="header-text">
+                    <h1>Guardia</h1>
+                    <h2>Ensuring Your Safety, Anytime, Anywhere</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/navigation">Navigation</a>
+        <a href="/guardian">Guardians</a>
+        <a href="/safetyalarm">Safety Alarm</a>
+    </nav>
+
+    <main>
+        <div id="map" style="height: 400px;"></div>
+        <div class="controls">
+            <button id="startTracking">Start Tracking</button>
+            <button id="stopTracking">Stop Tracking</button>
+            <button id="shareLocation">Share Location</button>
+        </div>
+        <div id="locationInfo">
+            <p>Your current location will appear here.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guardia - All Rights Reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/navigationScript.js"></script>
+</body>
+</html>

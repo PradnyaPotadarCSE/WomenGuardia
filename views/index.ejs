@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guardia - Woman Safety Web App</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <img src="images/protection.png" alt="Guardia Logo" class="header-logo" />
+        <div class="header-text">
+          <h1>Guardia</h1>
+          <h2>Ensuring Your Safety, Anytime, Anywhere</h2>
+        </div>
+      </div>
+      <div class="header-right">
+        <% if (!user) { %>
+          <!-- Show buttons if user is not logged in -->
+          <a href="/login" class="login-btn">Login</a>
+          <a href="/register" class="signup-btn">Sign Up</a>
+          <% } else { %>
+            <!-- Display user info or logout button if logged in -->
+            <div class="header-text">
+              <h2 class="header-text">Welcome, <%= user.username %>
+              </h2>
+            </div>
+            <a href="/logout" class="login-btn">Logout</a>
+            <% } %>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/navigation">Navigation</a>
+    <a href="/guardian">Guardians</a>
+    <a href="/safetyalarm">Safety Alarm</a>
+  </nav>
+  <section class="helpline-ticker">
+    <marquee behavior="scroll" direction="left">
+      <strong>Women's Helpline: 1091</strong> – Available 24/7 for your safety
+      and support.
+    </marquee>
+  </section>
+  <section class="benefit-cards">
+    <div class="card">
+      <img src="images/shield.png" alt="Safety Shield Icon" />
+      <h3>500K+</h3>
+      <p>Women Protected</p>
+    </div>
+    <div class="card">
+      <img src="images/sos.png" alt="SOS Alarm Icon" />
+      <h3>150K+</h3>
+      <p>Emergency SOS Triggered</p>
+    </div>
+    <div class="card">
+      <img src="images/community.jpg" alt="Community Icon" />
+      <h3>200K+</h3>
+      <p>Safe Zones Created</p>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <h3>Latest News</h3>
+    <p>
+      Stay updated with the latest safety tips and news for women. We cover
+      local safety initiatives, updates on safety technology, and more.
+    </p>
+    <ul>
+      <li><a href="#">New safety feature added to Guardia app</a></li>
+      <li><a href="#">Self-defense classes available in your area</a></li>
+      <li>
+        <a href="#">New emergency response protocols in city centers</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="tips-section">
+    <h3>Safety Tips for Women</h3>
+    <p>Here are some essential safety tips every woman should know:</p>
+    <ul>
+      <li>Always inform a trusted person about your whereabouts.</li>
+      <li>Carry a safety tool like pepper spray or a loud alarm.</li>
+      <li>Be cautious of your surroundings, especially in isolated areas.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="#">FAQ</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Help</a>
+    <p>&copy; 2024 Guardia - All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>

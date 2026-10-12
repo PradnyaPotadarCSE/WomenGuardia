@@ -1,0 +1,146 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff9a9e, #8a2387);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  flex: 1;
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 32px;
+  color: #8a2387;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff9a9e;
+}
+
+button {
+  background: linear-gradient(to right, #ff9a9e, #8a2387);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #8a2387;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #ff9a9e;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px;
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .image-container {
+    height: 200px;
+  }
+
+  .form-container {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-height: 700px) {
+  .container {
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  input {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,255 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff9a9e, #8a2387);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: black;
+}
+
+.header-text h2 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6584;
+}
+
+.helpline-ticker {
+  background-color: #ff6584;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 350px;
+}
+
+.card-title {
+  color: #8a2387;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  width: calc(100% - 22px); /* Adjust for padding and border */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ff6584;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4266;
+}
+
+.guardian-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.guardian-circle-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 101, 132, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.guardian-slot {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #ff6584;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.quick-dial {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.quick-dial-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-dial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quick-dial-card h3 {
+  color: #8a2387;
+  margin-bottom: 10px;
+}
+
+.quick-dial-card p {
+  margin: 5px 0;
+}
+
+.status-text {
+  font-style: italic;
+  color: #555;
+}
+
+.quick-dial-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.quick-dial-buttons button {
+  background-color: #ff6584;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quick-dial-buttons button:hover {
+  background-color: #ff4266;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-left {
+    margin-bottom: 20px;
+  }
+
+  .guardian-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .guardian-slot {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card {
+    min-width: 100%; /* Full width on small screens */
+  }
+}

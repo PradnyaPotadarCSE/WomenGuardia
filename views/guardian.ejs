@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guardians - Guardia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/guardianStyles.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <img
+            src="images/protection.png"
+            alt="Guardia Logo"
+            class="header-logo"
+          />
+          <div class="header-text">
+            <h1>Guardia</h1>
+            <h2>Ensuring Your Safety, Anytime, Anywhere</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/navigation">Navigation</a>
+      <a href="/guardian">Guardians</a>
+      <a href="/safetyalarm">Safety Alarm</a>
+    </nav>
+
+    <section class="helpline-ticker">
+      <marquee behavior="scroll" direction="left">
+        <strong>Women's Helpline: 1091</strong> – Available 24/7 for your safety
+        and support.
+      </marquee>
+    </section>
+
+    <div class="container">
+      <h1
+        style="
+          text-align: center;
+          color: black;
+          background-color: white;
+          margin-bottom: 20px;
+        "
+      >
+        Guardians
+      </h1>
+
+      <div class="cards-container">
+        <div class="card">
+          <h2 class="card-title">Add Guardian</h2>
+          <form id="addGuardianForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" required />
+            </div>
+            <button type="submit">Add Guardian</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Guardian Circle</h2>
+          <div class="guardian-circle">
+            <div class="guardian-circle-center">You</div>
+          </div>
+        </div>
+      </div>
+
+      <h2
+        style="
+          text-align: center;
+          color: black;
+          background-color: white;
+          margin-top: 30px;
+        "
+      >
+        Quick Dial
+      </h2>
+      <div class="quick-dial" id="quickDial"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Guardia. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/guardianScript.js"></script>
+  </body>
+</html>
